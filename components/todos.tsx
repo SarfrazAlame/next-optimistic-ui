@@ -19,6 +19,7 @@ export default function Todos({ todos }: { todos: Todo[] }) {
       return [...state, newTodo]
     }
   )
+  
 
   async function action(data: FormData) {
     const title = data.get('title')
